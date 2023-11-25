@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block center %}
+    <h2>Detalhando Hospedagem</h2>
+    <table class="table table-bordered" >
+        <thead>
+        <tr>
+            <th>Data Entrada</th>
+            <th>Data Saida</th>
+            <th>Valor</th>
+            <th>Cliente</th>
+            <th>Quarto</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>{{ hospedagem.data_entrada }}</td>
+            <td>{{ hospedagem.data_saida }}</td>
+            <td>{{ hospedagem.valor }}</td>
+            <td>{{ hospedagem.cliente }}</td>
+            <td>{{ hospedagem.quarto }}</td>
+        </tr>
+        </tbody>
+    </table>
+{% endblock %}
